@@ -1,0 +1,109 @@
+*{
+    /*border: 1px solid black;*/
+}
+
+body{
+    background-color: #749daa;
+    margin: 0%;
+    border: 0px;
+}
+.container {
+    display: flex; /* or inline-flex */
+  }
+
+.item-stretch{
+    flex-grow: 5;
+    /* background-color: blue; */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+    #logo{
+        max-width: 45pt;
+        display: block;
+        margin-left: 0px;
+    }header{
+        
+        background-color: chartreuse;
+    }
+    nav{
+        display: none;
+        background-color: yellow;
+    }
+    div.nav-mobile{
+        display: block;
+        background-color: yellow;
+
+    }
+    .item{
+        flex-basis: 1;
+        /* background-color: pink; */
+        text-align: center;
+        font-size: 30pt
+    }
+    .item-left{
+        padding: 3%;
+    }
+    .item-right{
+        margin-top: 0;
+        padding: 7%;
+        padding-bottom: 5%;
+    }
+    section{
+        background-color: red;
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+    }
+    footer{
+        background-color: blueviolet;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+    }   
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 720px){
+/* Styles */
+
+}
+
+@media only screen and (max-width : 1024px){
+/* Styles */
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+    #logo{
+        max-width: 140px;
+        display: block;
+        margin: 0 auto;
+    }header{
+        
+        background-color: chartreuse;
+    }
+    nav{
+        background-color: yellow;
+    }
+    section{
+        background-color: red;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    footer{
+        background-color: blueviolet;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+    }   
+}
